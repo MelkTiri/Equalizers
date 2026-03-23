@@ -3,125 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pictures - Equalizers Basketball</title>
+    <title>Equalizers - Homepage</title>
     <style>
-        /* Base Styles */
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-
-        /* Navigation & Header */
-        nav {
-            background-color: #0033a0;
-            padding: 20px;
-            color: #ffcc00;
-        }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .nav-links { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f0f0f0; text-align: center; }
         
-        /* Heading Styles */
-        .section-title {
-            font-size: 28px;
-            background-color: #002b80;
-            color: #ffcc00;
-            padding: 15px;
-            margin: 20px auto;
-            width: 80%;
-            border: 4px solid black;
-            outline: #4CAF50 solid 2px;
+        /* Navigation Styling */
+        nav { background-color: #0033a0; padding: 15px; border-bottom: 5px solid #ffcc00; }
+        nav a { color: white; text-decoration: none; font-weight: bold; margin: 0 10px; }
+        .nav-container { background-color: yellow; padding: 10px; border-radius: 10px; margin-top: 10px; }
+        
+        /* Layout Elements */
+        .logo-main { width: 250px; height: auto; margin: 20px 0; }
+        
+        .hero-text { 
+            border: 6px solid black; outline: #4CAF50 solid 2px; 
+            margin: 20px auto; padding: 20px; width: 80%;
+            background-color: blue; color: yellow; font-weight: bold;
         }
 
-        /* Gallery Grid System */
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+        /* Upload Section Styling */
+        .upload-section {
+            background-color: #ffffff;
+            border: 4px solid #0033a0;
+            border-radius: 15px;
+            margin: 30px auto;
+            padding: 25px;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-
-        .gallery-item {
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+        .upload-btn {
+            background-color: #0033a0; color: white;
+            padding: 10px 20px; border-radius: 5px;
+            cursor: pointer; display: inline-block; margin-top: 10px;
         }
-
-        .gallery-item:hover {
-            transform: scale(1.03); /* Slight zoom when hovering */
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover; /* Crops images to fit the box perfectly */
-            border-radius: 5px;
-        }
-
-        .gallery-item p {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #0033a0;
-        }
-
-        /* Music Controls */
-        .audio-player { margin: 20px; }
+        #preview-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+        .preview-img { width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid #ddd; }
     </style>
 </head>
 <body>
 
-<nav>
-    <img src="https://i.imgur.com/7aayhvB.jpeg.jpeg" alt="Logo" width="80">
-    <h1>Equalizer Basketball Club</h1>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About Us.html">About Us</a></li>
-        <li><a href="Contacts.html">Contacts</a></li>
-        <li><a href="https://www.thenational.com.pg/from-backyard-basketball-to-port-moresby-basketball-association/">In the News</a></li>
-    </ul>
-</nav>
-
-<div class="audio-player">
     <audio controls autoplay>
         <source src="uncomfortable-drive.mp3" type="audio/mpeg">
     </audio>
-</div>
 
-<h1 class="section-title">Club Photo Gallery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="nav-container">
+            <h1 style="margin:0; font-size: 24px;">Equalizers Basketball Club</h1>
+            <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px;">
+                <li><a href="About Us.html" style="color: blue;">About Us</a></li>
+                <li><a href="Contacts.html" style="color: blue;">Contacts</a></li>
+                <li><a href="Pictures.html" style="color: blue;">Pictures</a></li>
+                <li><a href="#upload" style="color: blue;">Upload Moments</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="gallery-container">
-    <div class="gallery-item">
-        <img src="https://i.postimg.cc/SK5xWFvr/Equalizers-Mens-Team.jpg.jpeg" alt="Mens Team">
-        <p>The Men's Side</p>
+    <img src="https://i.postimg.cc/1X9mY3Z4/Equalizers-Logo.jpg" alt="Equalizers Logo" class="logo-main">
+
+    <div class="hero-text" style="font-size: 40px;">
+        Welcome to the official page of the Equalizers Basketball Club
     </div>
-    <div class="gallery-item">
-        <img src="https://i.postimg.cc/cCG1b7Zt/Equalizers-Womens-Team.jpg.jpeg" alt="Womens Team">
-        <p>The Women's Side</p>
+
+    <div class="hero-text" style="font-size: 20px;">
+        The Equalizers Basketball Club is a community-driven club based in Port Moresby, PNG. We are dedicated to developing talent and competing in the Port Moresby Basketball Association.
     </div>
-</div>
 
-<h2 class="section-title">Moments from the Court</h2>
+    <section id="upload" class="upload-section">
+        <h2 style="color: #0033a0;">Share Your Moments</h2>
+        <p>Players and fans, upload your photos from the latest game or training session here!</p>
+        
+        <label for="moment-upload" class="upload-btn">Choose Photo</label>
+        <input type="file" id="moment-upload" accept="image/*" style="display: none;" multiple>
+        
+        <div id="preview-container">
+            </div>
+    </section>
 
-<div class="gallery-container">
-    <div class="gallery-item"><img src="https://i.postimg.cc/j5t79qDx/Whats-App-Image-2025-05-20-at-9-47-53-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/9Mb7j39G/Whats-App-Image-2025-05-20-at-9-47-54-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/J0dHGbP0/Whats-App-Image-2025-05-20-at-9-47-55-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/3rLvSTYh/Whats-App-Image-2025-05-20-at-9-47-56-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/RZtJZJfC/Whats-App-Image-2025-05-20-at-9-47-58-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/5tMYY9qB/Whats-App-Image-2025-05-20-at-9-47-59-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/FRT7Bytp/Whats-App-Image-2025-05-20-at-9-48-01-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/tJf7X94V/Whats-App-Image-2025-05-20-at-9-48-02-AM.jpg"></div>
-    <div class="gallery-item"><img src="https://i.postimg.cc/1RY80rr5/Whats-App-Image-2025-05-20-at-9-48-04-AM.jpg"></div>
-</div>
+    <script>
+        const uploader = document.getElementById('moment-upload');
+        const preview = document.getElementById('preview-container');
 
-<footer style="padding: 40px; color: #666;">
-    &copy; 2026 Equalizers Basketball Club
-</footer>
+        uploader.addEventListener('change', function() {
+            const files = this.files;
+            if (files) {
+                Array.from(files).forEach(file => {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.classList.add('preview-img');
+                        preview.appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                });
+                alert("Nice shot! Your moment has been added to the preview.");
+            }
+        });
+    </script>
+
+    <footer style="margin-top: 50px; padding: 20px; color: #666;">
+        &copy; 2026 Equalizers Basketball Club | Port Moresby, PNG
+    </footer>
 
 </body>
 </html>
